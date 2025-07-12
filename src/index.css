@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --account-color: #77ba00;
+}
+.accounts a {
+  width: 35px;
+  height: 35px;
+  background-color: var(--account-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#myBtn{
+    transition: background 0.5s all ease-in-out;
+}
+#myBtn:hover, .accounts a:hover{
+    background-color: black !important;
+}
+.subscribe{
+  border: 2px solid white;
+  border-radius: 24px;
+  background-color: transparent;
+  padding: 10px 24px;
+}
+@media (max-width: 800px) {
+  .top-header {
+   gap: 4px;
+   padding: 8px 0;
+   flex-direction: column;
+    height: auto !important;
+  }
+}
+
