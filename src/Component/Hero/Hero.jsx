@@ -4,28 +4,23 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "./Hero.css";
 
-import hero1 from '../../assets/slider/1.avif';
-import hero2 from '../../assets/slider/2.avif';
-import hero3 from '../../assets/slider/3.avif';
+import hero1 from "../../assets/slider/1.avif";
+import hero2 from "../../assets/slider/2.avif";
+import hero3 from "../../assets/slider/3.avif";
 
 export default function HeroSlider() {
   const slides = [
     {
       image: hero1,
-      heading: "Travel Brings Power & Love back to your Life",
-      text: "Your journey begins here. Discover our services today. Discover our services today. Discover our services today.",
       link: "#",
     },
     {
       image: hero2,
-      heading: "Travel Brings Power & Love back to your Life",
-      text: "Your journey begins here. Discover our services today. Discover our services today. Discover our services today.",
       link: "#",
     },
     {
       image: hero3,
-      heading: "Travel Brings Power & Love back to your Life",
-      text: "Your journey begins here. Discover our services today. Discover our services today. Discover our services today.",
+      text: "",
       link: "#",
     },
   ];
@@ -37,10 +32,9 @@ export default function HeroSlider() {
         loop={true}
         effect="fade"
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        className="hero-swiper"
         breakpoints={{
-            1024: { slidesPerView: 1 },
-          }}
+          1024: { slidesPerView: 1 },
+        }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -50,11 +44,28 @@ export default function HeroSlider() {
             >
               <div className="hero-overlay">
                 <div className="hero-content text-white text-start px-4">
-                  <h1 className="text-uppercase fw-bold">{slide.heading}</h1>
-                  <p>{slide.text}</p>
-                  <button className="btn text-uppercase fw-bold mt-2" id="myBtn">
-                    Get Started
+                  <h1 className="text-uppercase fw-bold">
+                    Travel Brings Power & Love back to your Life
+                  </h1>
+                  <p>
+                    Your journey begins here. Discover our services today.
+                    Discover our services today. Discover our services today.
+                  </p>
+                  <div className="hero-btn d-flex gap-4">
+                    <button
+                    className="btn text-uppercase fw-bold mt-2 text-light myBtn" style={{border: '2px solid #77ba00'}}
+                 
+                  >
+                    About us
                   </button>
+                  {/* contact us page  */}
+                  <button
+                    className="btn text-uppercase fw-bold mt-2 text-light myBtn second-btn"
+                  
+                  >
+                    Contact us
+                  </button>
+                  </div>
                 </div>
               </div>
             </div>

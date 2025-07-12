@@ -5,6 +5,7 @@ import HeroSlider from "./Component/Hero/Hero";
 import Services from "./Component/Services/Service";
 import HotelRooms from "./Component/Hotel/Hotel";
 import Subscribe from "./Component/Subscribe/Subscribe";
+import Spot from "./Component/Spots/Spot";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   <Services />
   <HotelRooms />
   <Subscribe />
+  <Spot />
   </div>
  )
   
