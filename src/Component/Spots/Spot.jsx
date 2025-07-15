@@ -6,12 +6,12 @@ import img3 from "../../assets/resources/sp-3.avif";
 
 export default function Spot() {
   return (
-    <section className="spot-section" style={{ backgroundColor: "#f6f6f6" }}>
+    <section className="spot-section">
       <div className="container px-0">
         {/* Heading */}
         <div className="text-center mb-4">
-          <h2 className="fs-1 text-dark">
-            Nearby <span style={{ color: "#77ba00" }}>Attractive Spots</span>
+          <h2 className="fs-1 text-dark py-4">
+            Nearby <span>Attractive Spots</span>
           </h2>
           <img src={tb2} alt="underline" className="underline-img" />
         </div>
@@ -25,8 +25,8 @@ export default function Spot() {
               They call him Flipper Flipper faster than lightning no one you see is smarter than he black gold all of them had hair of gold like their mother the young one in curls never heard the word.
             </p>
             <button
-              className="btn text-uppercase px-4 fw-bold mt-2 myBtn"
-              style={{ backgroundColor: "#77ba00", color: "#fff",  width: "fit-content" }}
+              className="btn text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
+
             >
               Read More
             </button>
@@ -44,8 +44,7 @@ export default function Spot() {
               They call him Flipper Flipper faster than lightning no one you see is smarter than he black gold.
             </p>
             <button
-              className="btn text-uppercase px-4 fw-bold mt-2 myBtn"
-              style={{ backgroundColor: "#77ba00", color: "#fff",  width: "fit-content" }}
+              className="btn text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
             >
               Read More
             </button>
@@ -63,8 +62,7 @@ export default function Spot() {
               They call him Flipper Flipper faster than lightning no one you see is smarter than he black gold.
             </p>
             <button
-              className="btn text-uppercase px-4 fw-bold mt-2 myBtn"
-              style={{ backgroundColor: "#77ba00", color: "#fff",  width: "fit-content" }}
+              className="btn text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
             >
               Read More
             </button>

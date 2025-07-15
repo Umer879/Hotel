@@ -16,10 +16,11 @@
 @media (max-width: 992px) {
   .nav-links {
     position: fixed;
-    top: 10vh;
+    top: 9vh;
     left: -100%;
-    height: 100vh;
-    width: 50vw;
+    padding: 20px 0;
+    height: auto;
+    width: 50%;
     background-color: #fff;
     flex-direction: column !important;
     justify-content: center;
@@ -39,4 +40,16 @@
     align-items: center;
     gap: 1.5rem;
   }
+}
+@media screen and (max-width: 800px) {
+  .nav-links{
+     top: 79px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-links{
+    top: 103px;
+    width: 100%;
+  }
+  
 }

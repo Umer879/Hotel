@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from '../../assets/logo/logo.avif'
+import logo from "../../assets/logo/logo.avif";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,10 +9,10 @@ export default function Navbar() {
   return (
     <header>
       <nav className="custom-navbar bg-light">
-        <div className=" d-flex padding justify-content-between align-items-center h-100 px-5">
+        <div className="d-flex padding justify-content-between align-items-center h-100 px-5">
           {/* Logo */}
           <div className="fs-3 fw-bold text-uppercase" aria-label="Logo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Hotel Logo" />
           </div>
 
           {/* Navigation Menu */}
@@ -20,22 +21,62 @@ export default function Navbar() {
             role="navigation"
             aria-label="Main Navigation"
           >
-            <ul className="list-unstyled  d-flex flex-md-row flex-column align-items-md-center gap-5 m-0 p-0">
-              <li><a href="#" className=" fw-bold text-dark text-uppercase text-decoration-none">Home</a></li>
-              <li><a href="#" className=" fw-bold text-dark text-uppercase text-decoration-none">About</a></li>
-              <li><a href="#" className=" fw-bold text-dark text-uppercase text-decoration-none">Services</a></li>
-              <li><a href="#" className=" fw-bold text-dark text-uppercase text-decoration-none">Pages</a></li>
-              <li><a href="#" className=" fw-bold text-dark text-uppercase text-decoration-none">News</a></li>
-              <li><a href="#" className=" fw-bold text-dark text-uppercase text-decoration-none">Contact</a></li>
+            <ul className="list-unstyled d-flex flex-md-row flex-column align-items-md-center gap-5 m-0 p-0">
+              <li>
+                <Link
+                  to="/"
+                  className="fw-bold text-dark text-uppercase text-decoration-none"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="fw-bold text-dark text-uppercase text-decoration-none"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="fw-bold text-dark text-uppercase text-decoration-none"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/news"
+                  className="fw-bold text-dark text-uppercase text-decoration-none"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="fw-bold text-dark text-uppercase text-decoration-none"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
 
-            <a
-              href="#"
-              className="btn text-uppercase fw-bold ms-3 text-white rounded-pill" id="myBtn" style={{padding: '12px 24px', backgroundColor: '#77ba00'}}
+            <Link
+              to="/appointment"
+              className="btn globalBtn text-uppercase fw-bold ms-3 text-white rounded-pill"
+              onClick={() => setMenuOpen(false)}
               role="button"
             >
               Appointment
-            </a>
+            </Link>
           </div>
 
           {/* Toggle Button */}

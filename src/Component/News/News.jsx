@@ -1,0 +1,65 @@
+import React from "react";
+import { FaArrowRight } from "react-icons/fa";
+
+// Sample images
+import img1 from "../../assets/Blog/1.avif";
+import img2 from "../../assets/Blog/2.avif";
+import img3 from "../../assets/Blog/3.avif";
+import tb2 from '../../assets/resources/tb2.avif'
+
+const articles = [
+  {
+    image: img1,
+    publishDate: "July 10, 2025",
+    title: "Top 5 Beach Destinations",
+    description: "Explore the most beautiful and peaceful beaches for your next vacation.",
+    link: "#",
+  },
+  {
+    image: img2,
+    publishDate: "July 08, 2025",
+    title: "Travel Hacks You Must Know",
+    description: "Save money and time on your trips with these helpful travel hacks.",
+    link: "#",
+  },
+  {
+    image: img3,
+    publishDate: "July 05, 2025",
+    title: "Hotel Room Selection Guide",
+    description: "Find the perfect hotel room with our step-by-step selection guide.",
+    link: "#",
+  },
+];
+
+export default function Newsletter() {
+  return (
+    <section className="py-5 newsletter-section">
+      <div className="container">
+       <div className="container text-center mb-4 heading">
+               <h2 className="fs-1">
+                 Hotel <span>Room</span>
+               </h2>
+               <img src={tb2} alt="underline" className="underline-img" />
+             </div>
+
+        <div className="row g-4">
+          {articles.map((item, index) => (
+            <div key={index} className="col-12 col-md-6 col-lg-4">
+              <div className="card h-100 shadow-sm">
+                <img src={item.image} className="card-img-top" alt={item.title} />
+                <div className="card-body d-flex flex-column">
+                  <small className="text-muted mb-2">{item.publishDate}</small>
+                  <h5 className="card-title fw-bold">{item.title}</h5>
+                  <p className="card-text text-muted">{item.description}</p>
+                  <a href={item.link} className="mt-auto text-decoration-none link fw-bold">
+                    Read More <FaArrowRight className="ms-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

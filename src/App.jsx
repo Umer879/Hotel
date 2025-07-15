@@ -1,26 +1,34 @@
-import React from "react"
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import TopHeader from "./Component/TopHeader/Header";
 import Navbar from "./Component/Navbar/Navbar";
-import HeroSlider from "./Component/Hero/Hero";
-import Services from "./Component/Services/Service";
-import HotelRooms from "./Component/Hotel/Hotel";
-import Subscribe from "./Component/Subscribe/Subscribe";
-import Spot from "./Component/Spots/Spot";
+
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import News from './Pages/News'
+import Appointment from "./Pages/Appointement";
+import Contact from "./Pages/Contact";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
- return(
-  <div>
-  <TopHeader />
-  <Navbar />
-  <HeroSlider />
-  <Services />
-  <HotelRooms />
-  <Subscribe />
-  <Spot />
-  </div>
- )
-  
+    return (
+        <Router>
+            <TopHeader />
+            <Navbar />
+            
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/appointment" element={<Appointment />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;

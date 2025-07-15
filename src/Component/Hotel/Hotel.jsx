@@ -1,5 +1,6 @@
 import "./Hotel.css";
 import React from "react";
+import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -32,7 +33,7 @@ export default function HotelRooms() {
       price: 170,
       link: "#",
     },
-        {
+    {
       image: room4,
       title: "Family Room",
       price: 170,
@@ -46,7 +47,7 @@ export default function HotelRooms() {
 
       <div className="container text-center mb-4 heading">
         <h2 className="fs-1 text-light">
-          Hotel <span style={{ color: "#77ba00" }}>Room</span>
+          Hotel <span>Room</span>
         </h2>
         <img src={tb2} alt="underline" className="underline-img" />
       </div>
@@ -69,17 +70,18 @@ export default function HotelRooms() {
                 <img
                   src={room.image}
                   alt={room.title}
-                  className="w-100 room-img" style={{height: '230px'}}
+                  className="w-100 room-img"
+                  style={{ height: "230px" }}
                 />
 
                 <div className="p-3 text-center">
-                  <div className="mb-2">
+                  <div className="mb-2 d-flex justify-content-center">
                     {[...Array(5)].map((_, i) => (
-                      <i
+                      <FaStar
                         key={i}
-                        className="fas fa-star mx-1"
+                        className="mx-1"
                         style={{ color: "#77ba00" }}
-                      ></i>
+                      />
                     ))}
                   </div>
 
@@ -89,13 +91,7 @@ export default function HotelRooms() {
                     <span className="fs-4 fw-bold">${room.price}</span>
                     <a
                       href={room.link}
-                      className="text-decoration-none"
-                      style={{
-                        color: "#77ba00",
-                        borderBottom: "1px solid #77ba00",
-                        fontSize: "12px",
-                      }}
-                    >
+                      className="text-decoration-none room-link">
                       BOOK NOW
                     </a>
                   </div>

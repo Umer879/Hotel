@@ -53,18 +53,16 @@ export default function HeroSlider() {
                   </p>
                   <div className="hero-btn d-flex gap-4">
                     <button
-                    className="btn text-uppercase fw-bold mt-2 text-light myBtn" style={{border: '2px solid #77ba00'}}
-                 
-                  >
-                    About us
-                  </button>
-                  {/* contact us page  */}
-                  <button
-                    className="btn text-uppercase fw-bold mt-2 text-light myBtn second-btn"
-                  
-                  >
-                    Contact us
-                  </button>
+                      className="btn text-uppercase fw-bold mt-2 text-light myBtn"
+                      style={{ border: '2px solid #77ba00' }}
+                    >
+                      About us
+                    </button>
+                    <button
+                      className="btn text-uppercase fw-bold mt-2 text-light myBtn second-btn"
+                    >
+                      Contact us
+                    </button>
                   </div>
                 </div>
               </div>
