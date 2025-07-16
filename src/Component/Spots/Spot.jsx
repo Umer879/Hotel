@@ -25,7 +25,7 @@ export default function Spot() {
               They call him Flipper Flipper faster than lightning no one you see is smarter than he black gold all of them had hair of gold like their mother the young one in curls never heard the word.
             </p>
             <button
-              className="btn text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
+              className=" text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
 
             >
               Read More
@@ -44,7 +44,7 @@ export default function Spot() {
               They call him Flipper Flipper faster than lightning no one you see is smarter than he black gold.
             </p>
             <button
-              className="btn text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
+              className=" text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
             >
               Read More
             </button>
@@ -62,7 +62,7 @@ export default function Spot() {
               They call him Flipper Flipper faster than lightning no one you see is smarter than he black gold.
             </p>
             <button
-              className="btn text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
+              className=" text-uppercase px-4 fw-bold mt-2 text-light globalBtn"
             >
               Read More
             </button>

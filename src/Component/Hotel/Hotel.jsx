@@ -12,6 +12,7 @@ import room2 from "../../assets/resources/r2.avif";
 import room3 from "../../assets/resources/r3.avif";
 import room4 from "../../assets/resources/r4.avif";
 import tb2 from "../../assets/resources/tb2.avif";
+import { Link } from "react-router-dom";
 
 export default function HotelRooms() {
   const rooms = [
@@ -89,11 +90,9 @@ export default function HotelRooms() {
 
                   <div className="d-flex justify-content-between align-items-center mt-3 px-2">
                     <span className="fs-4 fw-bold">${room.price}</span>
-                    <a
-                      href={room.link}
-                      className="text-decoration-none room-link">
+                    <Link to="/booking" className="text-decoration-none room-link">
                       BOOK NOW
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

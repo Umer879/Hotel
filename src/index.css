@@ -54,9 +54,10 @@ span, .stars, .role, .link, hr, .icons{
   background-color: var(--account-color);
   font-size: 14px;
   padding: 12px 30px;
-  border: 2px solid var(--account-color);
+  border: 0;
   border-radius: 30px;
   width: fit-content;
+  outline: 0;
   transition: background 0.5s all ease-in-out;
 }
 .myBtn:hover,
@@ -398,7 +399,9 @@ background-color: #76ba008c;
   transform: scale(1.1);
 }
 
-
+.bookingForm label{
+  color: var(--account-color);
+}
 @media (min-width: 1400px) {
   .myAbout {
     max-width: 1320px;
@@ -440,5 +443,8 @@ background-color: #76ba008c;
     height: auto;
     gap: 20px;
     flex-direction: column;
+  }
+  .booking-features h2{
+    margin: 40px 0 0 0;
   }
 }
