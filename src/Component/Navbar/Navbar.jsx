@@ -51,11 +51,11 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/news"
+                  to="/rooms"
                   className="fw-bold text-dark text-uppercase text-decoration-none"
                   onClick={() => setMenuOpen(false)}
                 >
-                  News
+                  Rooms
                 </Link>
               </li>
               <li>

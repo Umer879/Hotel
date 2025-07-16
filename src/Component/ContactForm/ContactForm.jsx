@@ -50,7 +50,7 @@ const ContactForm = () => {
                             <textarea className="form-control input-data" rows="5" placeholder="Your Message..."></textarea>
                         </div>
                         <button
-                            className="btn text-uppercase px-5 fw-bold mt-2 text-light globalBtn"
+                            className="btn text-uppercase px-5 fw-bold m-2 text-light globalBtn"
 
                         >
                             Submitt

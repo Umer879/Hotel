@@ -8,7 +8,6 @@
   font-size: 24px;
   transition: all 0.3s ease;
 }
-
 .service-card:hover .icon-box {
   background-color: white;
   color: #77ba00;
@@ -24,7 +23,6 @@
     text-align: center;
     align-items: center !important;
   }
-
   .service-card .icon-box {
     margin: 0 auto;
   }

@@ -7,7 +7,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
-import News from './Pages/News'
+import Rooms from './Pages/Rooms'
 import Appointment from "./Pages/Appointement";
 import Contact from "./Pages/Contact";
 
@@ -23,7 +23,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
-                <Route path="/news" element={<News />} />
+                <Route path="/rooms" element={<Rooms />} />
                 <Route path="/appointment" element={<Appointment />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
